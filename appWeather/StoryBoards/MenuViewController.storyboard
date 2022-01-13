@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+    </dependencies>
+    <scenes>
+        <!--Map-->
+        <scene sceneID="WXo-xC-bg1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Map" id="4yk-UR-ToS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="gRU-sx-nI8"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w4g-bc-Xcr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1078" y="598"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="MapViewController" customModule="appWeather" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="22a-Rf-Ihu">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qrs-Jm-yEv">
+                                <rect key="frame" x="100" y="52" width="214" height="0.0"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="o9r-5j-lGV">
+                                <rect key="frame" x="100" y="60" width="214" height="0.0"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="dfE-ZM-9eo">
+                                <rect key="frame" x="100" y="68" width="214" height="0.0"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="o9r-5j-lGV" firstAttribute="trailing" secondItem="qrs-Jm-yEv" secondAttribute="trailing" id="4MA-Yl-zSO"/>
+                            <constraint firstItem="dfE-ZM-9eo" firstAttribute="leading" secondItem="o9r-5j-lGV" secondAttribute="leading" id="9iv-xS-Jiy"/>
+                            <constraint firstItem="dfE-ZM-9eo" firstAttribute="top" secondItem="o9r-5j-lGV" secondAttribute="bottom" constant="8" id="IB8-L1-3s1"/>
+                            <constraint firstItem="o9r-5j-lGV" firstAttribute="leading" secondItem="qrs-Jm-yEv" secondAttribute="leading" id="KR1-Ea-I3Q"/>
+                            <constraint firstItem="22a-Rf-Ihu" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="aY1-YQ-E8o"/>
+                            <constraint firstItem="o9r-5j-lGV" firstAttribute="top" secondItem="qrs-Jm-yEv" secondAttribute="bottom" constant="8" id="dX6-dx-D5q"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="qrs-Jm-yEv" secondAttribute="trailing" constant="100" id="fTO-FQ-6eg"/>
+                            <constraint firstItem="qrs-Jm-yEv" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="8" id="jyJ-Na-Z2K"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="22a-Rf-Ihu" secondAttribute="trailing" id="kbG-QD-44c"/>
+                            <constraint firstItem="dfE-ZM-9eo" firstAttribute="trailing" secondItem="o9r-5j-lGV" secondAttribute="trailing" id="qxe-8i-Iqq"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="22a-Rf-Ihu" secondAttribute="bottom" id="vBl-c9-dU8"/>
+                            <constraint firstItem="qrs-Jm-yEv" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="100" id="w90-Zv-OML"/>
+                            <constraint firstItem="22a-Rf-Ihu" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="xnu-Sb-Kqf"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="48" id="98l-pY-b3e"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="labelCountry" destination="qrs-Jm-yEv" id="oUW-PY-83v"/>
+                        <outlet property="labelCounty" destination="o9r-5j-lGV" id="igi-fs-2xc"/>
+                        <outlet property="labeltemp" destination="dfE-ZM-9eo" id="tIp-G0-pJ9"/>
+                        <outlet property="mapView" destination="22a-Rf-Ihu" id="1f7-ca-awu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44.927536231884062" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="48" width="48" height="48"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
